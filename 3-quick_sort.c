@@ -46,30 +46,30 @@ int partition(int *array, int left, int right, size_t size)
 	int temp, i;
 	int j;
 
-	i = left - 1;
+	j = left - 1;
 
-	for (j = left; j < right; j++)
+	for (i = left; i < right; i++)
 	{
-		if (array[j] < array[right])
+		if (array[i] < array[right])
 		{
-			i++;
-			if (i != j)
+			j++;
+			if (j != i)
 			{
-				temp = array[i];
-				array[i] = array[j];
-				array[j] = temp;
+				temp = array[j];
+				array[j] = array[i];
+				array[i] = temp;
 				print_array(array, size);
 			}
 		}
 	}
 
-	if (array[right] < array[i + 1])
+	if (array[right] < array[j + 1])
 	{
-		temp = array[i + 1];
-		array[i + 1] = array[right];
+		temp = array[j + 1];
+		array[j + 1] = array[right];
 		array[right] = temp;
 		print_array(array, size);
 	}
 
-	return (i + 1);
+	return (j + 1);
 }
