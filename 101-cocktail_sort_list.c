@@ -19,7 +19,7 @@ size_t list_len(listint_t *list)
 }
 
 /**
- * switch_nodes - function swaps nodes at pointer p with the following node
+ * switch_nodes - function swaps nodes at pointer p with following node
  * @list: head of list
  * @p: pointer to node
  */
