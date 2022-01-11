@@ -7,5 +7,4 @@ It's also about understanding the Big O notation of time complexity.
 These algorithms are implemented in C.
 
 ## Authors
-Biniyam Getachew
-Melat Samuel
+Biniyam Getachew & Melat Samuel
