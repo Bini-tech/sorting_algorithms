@@ -39,7 +39,7 @@ void quick_recursion(int *array, int left, int right, size_t size)
  * @right: index of the right element
  * @size: size of the array
  *
- * Return: the index of the piv element
+ * Return: index of the piv element
  */
 int partition(int *array, int left, int right, size_t size)
 {
